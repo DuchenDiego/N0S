@@ -1,0 +1,159 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MenuAdmin.master.cs" Inherits="VentaAlquilerVehiculos.MenuAdmin" %>
+
+<!DOCTYPE HTML>
+<!--
+	ZeroFour by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>N2O</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	</head>
+	<body class="homepage">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+             <div class="animated fadeIn">
+				<div class="header-wrapperadmin">
+					<div class="container">
+
+						<!-- Header -->
+							<header id="header">
+								<div class="inner">
+
+									<!-- Logo -->
+										<h1><a href="HomeAdmin.aspx" id="logo">N2O</a></h1>
+
+									<!-- Nav -->
+                                   
+										<nav id="nav">
+											<ul>
+												<li class="current_page_item"><a href="HomeAdmin.aspx">Inicio</a></li>
+												<li>
+													<a href="#">Sucursales</a>
+													<ul>
+														<li><a href="RegistroSucursal.aspx">Altas Sucursales</a></li>
+														<li><a href="BajaSucursal.aspx">Bajas Sucursales</a></li>
+														<li><a href="ModSucursal.aspx">Modificaciones Sucursales</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">Empleados</a>
+													<ul>
+														<li><a href="RegistroEmpleado.aspx">Altas Empleados</a></li>
+														<li><a href="BajaEmpleado.aspx">Bajas Empleados</a></li>
+														<li><a href="ModEmpleado.aspx">Modificaciones Empleados</a></li>
+                                                        <li><a href="BusquedaEmpleado.aspx">Busqueda Empleados</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">Autos</a>
+													<ul>
+														<li><a href="RegistroVehiculo.aspx">Altas Autos</a></li>
+														<li><a href="BajaVehiculo.aspx">Bajas Autos</a></li>
+														<li><a href="ModVehiculo.aspx">Modificaciones Autos</a></li>
+                                                        <li><a href="BusquedaVehiculo.aspx">Busqueda Autos</a></li>
+													</ul>
+												</li>
+                                                <li>
+                                                    
+                                                    <a ><asp:Image ID="Image1" runat="server" ImageUrl="~/Imagenes/usuario.png" Height="40px" ImageAlign="AbsMiddle" /></a>
+													<a href="#"><asp:Label ID="Label2" runat="server" Text="Label"></asp:Label></a>
+													<ul>
+														<li><a href="CerrarSesion.aspx"><asp:Label ID="Label3" runat="server" Text="Cerrar Sesion" Font-Size="Small"></asp:Label></a></li>
+													</ul>
+												</li>
+											</ul>
+										</nav>
+                                        </div>
+								</div>
+							</header>
+
+						<!-- Banner -->
+							<div id="banner">
+								<h2><strong>N2O:</strong>Venta y Alquiler de Automóviles
+								<br />
+								Módulo Administrador</h2>
+								<p>Bienvenido <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></p>
+								<!--<a href="#" class="button big icon fa-check-circle">Yes it does</a>-->
+							</div>
+
+					</div>
+				</div>
+
+			<!-- Main Wrapper -->
+				<div id="main-wrapper">
+					<div class="wrapper style1">
+						<div class="inner">
+
+							<!-- Feature 1 -->
+                             <form id="form1" runat="server">
+								<section class="container box feature1">
+									<div class="row">
+										<div class="12u">
+											<header class="first major">
+												<h2><asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder></h2>
+											</header>
+										</div>
+									</div>
+									<div class="row">
+										<div class="12u">
+											<asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+										</div>
+									</div>
+								</section>
+                              </form>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer Wrapper -->
+				<div id="footer-wrapper">
+					<footer id="footer" class="container">
+						<div class="row">
+							<div class="3u 12u(mobile)">
+
+								
+
+								
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="12u">
+								<div id="copyright">
+									<ul class="menu">
+										<li>Taller de Sistemas 1</li><li>Duchen Ibañez Brad Diego</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+
+		    <!-- <script src="assets/js/jquery.min.js"></script>-->
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			 <script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+            
+	</body>
+</html>

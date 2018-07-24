@@ -1,0 +1,2541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://tempuri.org/DSVentaAlquiler.xsd" />
+      <s:import schemaLocation="http://localhost:41678/Service.asmx?schema=DSVentaAlquiler" namespace="http://tempuri.org/DSVentaAlquiler.xsd" />
+      <s:element name="obtenersucursalporid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nIdsuc" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenersucursalporidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenersucursalporidResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="SucursalDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenersucursales">
+        <s:complexType />
+      </s:element>
+      <s:element name="obtenersucursalesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenersucursalesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="SucursalDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenersucursaleshabilitadas">
+        <s:complexType />
+      </s:element>
+      <s:element name="obtenersucursaleshabilitadasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenersucursaleshabilitadasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="SucursalDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obteneridsucdir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ndir" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obteneridsucdirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obteneridsucdirResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="SucursalDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ingresarsucursal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ndireccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nzona" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ntelefono" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ncantvehiculos" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ncantmaxvehiculos" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="nciadmin" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nestado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ingresarsucursalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ingresarsucursalResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="modifsucursal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ndireccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nzona" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ntelefono" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ncantvehiculos" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ncantmaxvehiculos" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="nciadmin" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nestado" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nidsucsec" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="modifsucursalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="modifsucursalResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bajasucursal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nidsucsec" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bajasucursalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="bajasucursalResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="modificarcantvehicsuc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ncantve" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="nidsuc" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="modificarcantvehicsucResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="modificarcantvehicsucResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="disminucionvehiculosuc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nidsuc" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="disminucionvehiculosucResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="disminucionvehiculosucResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerempleadoporid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nidemp" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerempleadoporidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenerempleadoporidResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="EmpleadoDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerempleados">
+        <s:complexType />
+      </s:element>
+      <s:element name="obtenerempleadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenerempleadosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="EmpleadoDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerempleadoshabilitados">
+        <s:complexType />
+      </s:element>
+      <s:element name="obtenerempleadoshabilitadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenerempleadoshabilitadosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="EmpleadoDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerempleadosdeshabilitados">
+        <s:complexType />
+      </s:element>
+      <s:element name="obtenerempleadosdeshabilitadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenerempleadosdeshabilitadosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="EmpleadoDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ingresarempleado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nciempl" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nnombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="napellidop" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="napellidom" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nfechanac" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="nemail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ncel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nestado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nlat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nocup" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nciadmin" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="nidsuc" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ingresarempleadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ingresarempleadoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ingresarencargado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nuse" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nconte" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nciempe" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nimge" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ingresarencargadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ingresarencargadoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ingresarvendedor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nusv" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ncontv" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nciempv" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nimgv" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ingresarvendedorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ingresarvendedorResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="modificarencargado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nuse" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nconte" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nciempe" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nimge" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nciemp" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="modificarencargadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="modificarencargadoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="modificarvendedor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nusv" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ncontv" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nciempv" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nimgv" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nciemp" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="modificarvendedorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="modificarvendedorResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cambiarimagenv">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nimgv" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nciemp" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cambiarimagenvResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cambiarimagenvResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cambiarimagene">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nimge" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nciemp" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cambiarimageneResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cambiarimageneResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerencargadopornick">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nnick" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerencargadopornickResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenerencargadopornickResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="EncargadoAlquilerDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenervendedorpornick">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nnick" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenervendedorpornickResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenervendedorpornickResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="VendedorDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="modifempleado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nciempl" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nnombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="napellidop" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="napellidom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nfechanac" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nemail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ncel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nestado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nlat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nocup" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nciadmin" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="nidsuc" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="nidemp" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="modifempleadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="modifempleadoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bajaempleado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nidemp" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bajaempleadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="bajaempleadoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="busquedaempleados">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nparam" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nparam2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="busquedaempleadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="busquedaempleadosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="EmpleadoDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="busquedaempleadoshabilitados">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nparam" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nparam2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="busquedaempleadoshabilitadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="busquedaempleadoshabilitadosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="EmpleadoDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="busquedaempleadosdeshabilitados">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nparam" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nparam2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="busquedaempleadosdeshabilitadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="busquedaempleadosdeshabilitadosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="EmpleadoDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenervehiculoss">
+        <s:complexType />
+      </s:element>
+      <s:element name="obtenervehiculossResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenervehiculossResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="VehiculoDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenervehiculoshabilitados">
+        <s:complexType />
+      </s:element>
+      <s:element name="obtenervehiculoshabilitadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenervehiculoshabilitadosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="VehiculoDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenervehiculosalquilerhabilitados">
+        <s:complexType />
+      </s:element>
+      <s:element name="obtenervehiculosalquilerhabilitadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenervehiculosalquilerhabilitadosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="VehiculoDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenervehiculosventahabilitados">
+        <s:complexType />
+      </s:element>
+      <s:element name="obtenervehiculosventahabilitadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenervehiculosventahabilitadosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="VehiculoDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenervehiculosdeshabilitados">
+        <s:complexType />
+      </s:element>
+      <s:element name="obtenervehiculosdeshabilitadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenervehiculosdeshabilitadosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="VehiculoDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenervehiculoporid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nidve" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenervehiculoporidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenervehiculoporidResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="VehiculoDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ingresarvehiculo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ncostoventa" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="ncostoalquiler" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="nurlmod" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ndimensiones" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ntransmis" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ncant" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nmmg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nmodelo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nsegur" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nmotor" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nmarca" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nasientos" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nciadmin" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="nidsuc" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nelqovent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nestado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ingresarvehiculoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ingresarvehiculoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="modificarcantidadvehiculos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ncantve" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="nidve" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="modificarcantidadvehiculosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="modificarcantidadvehiculosResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bajavehiculo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nidve" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bajavehiculoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="bajavehiculoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="disminucionvehiculoalquiler">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nidve" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="disminucionvehiculoalquilerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="disminucionvehiculoalquilerResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="aumentovehiculoalquiler">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nidve" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="aumentovehiculoalquilerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="aumentovehiculoalquilerResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="disminucionvehiculoventa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nidve" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="disminucionvehiculoventaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="disminucionvehiculoventaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="busquedavehiculos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nparam" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nparam2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="busquedavehiculosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="busquedavehiculosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="VehiculoDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="busquedavehiculoshabilitados">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nparam" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nparam2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="busquedavehiculoshabilitadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="busquedavehiculoshabilitadosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="VehiculoDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="busquedavehiculosdeshabilitados">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nparam" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nparam2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="busquedavehiculosdeshabilitadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="busquedavehiculosdeshabilitadosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="VehiculoDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ingresarcliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ncicl" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nnombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="napp" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="napm" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ncel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nemail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ndir" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ncuentab" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ingresarclienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ingresarclienteResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerclienteporid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nidcl" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerclienteporidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenerclienteporidResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="ClienteDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ingresaralquiler">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nfechi" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="nfechf" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="nfecha" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="ntotala" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="nplazoa" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="nciemp" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ncicl" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="nid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nest" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ingresaralquilerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ingresaralquilerResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obteneralquilerporcicliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ncicl" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obteneralquilerporciclienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obteneralquilerporciclienteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="AlquilerDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obteneralquileres">
+        <s:complexType />
+      </s:element>
+      <s:element name="obteneralquileresResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obteneralquileresResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="AlquilerDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="devolveralquiler">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ncicl" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="devolveralquilerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="devolveralquilerResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ingresarventa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nciemp" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="nidve" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ncicl" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="nfech" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ingresarventaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ingresarventaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerventaporcicliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ncicl" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerventaporciclienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenerventaporciclienteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="VentaDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerventas">
+        <s:complexType />
+      </s:element>
+      <s:element name="obtenerventasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenerventasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DSVentaAlquiler.xsd" name="namespace" />
+                <s:attribute fixed="VentaDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="registrarfactura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nnumfac" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ncicl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nnitemp" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nnumaut" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ntotal" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="ncodigoc" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nciemp" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="registrarfacturaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="registrarfacturaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="obtenersucursalporidSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenersucursalporid" />
+  </wsdl:message>
+  <wsdl:message name="obtenersucursalporidSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenersucursalporidResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtenersucursalesSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenersucursales" />
+  </wsdl:message>
+  <wsdl:message name="obtenersucursalesSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenersucursalesResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtenersucursaleshabilitadasSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenersucursaleshabilitadas" />
+  </wsdl:message>
+  <wsdl:message name="obtenersucursaleshabilitadasSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenersucursaleshabilitadasResponse" />
+  </wsdl:message>
+  <wsdl:message name="obteneridsucdirSoapIn">
+    <wsdl:part name="parameters" element="tns:obteneridsucdir" />
+  </wsdl:message>
+  <wsdl:message name="obteneridsucdirSoapOut">
+    <wsdl:part name="parameters" element="tns:obteneridsucdirResponse" />
+  </wsdl:message>
+  <wsdl:message name="ingresarsucursalSoapIn">
+    <wsdl:part name="parameters" element="tns:ingresarsucursal" />
+  </wsdl:message>
+  <wsdl:message name="ingresarsucursalSoapOut">
+    <wsdl:part name="parameters" element="tns:ingresarsucursalResponse" />
+  </wsdl:message>
+  <wsdl:message name="modifsucursalSoapIn">
+    <wsdl:part name="parameters" element="tns:modifsucursal" />
+  </wsdl:message>
+  <wsdl:message name="modifsucursalSoapOut">
+    <wsdl:part name="parameters" element="tns:modifsucursalResponse" />
+  </wsdl:message>
+  <wsdl:message name="bajasucursalSoapIn">
+    <wsdl:part name="parameters" element="tns:bajasucursal" />
+  </wsdl:message>
+  <wsdl:message name="bajasucursalSoapOut">
+    <wsdl:part name="parameters" element="tns:bajasucursalResponse" />
+  </wsdl:message>
+  <wsdl:message name="modificarcantvehicsucSoapIn">
+    <wsdl:part name="parameters" element="tns:modificarcantvehicsuc" />
+  </wsdl:message>
+  <wsdl:message name="modificarcantvehicsucSoapOut">
+    <wsdl:part name="parameters" element="tns:modificarcantvehicsucResponse" />
+  </wsdl:message>
+  <wsdl:message name="disminucionvehiculosucSoapIn">
+    <wsdl:part name="parameters" element="tns:disminucionvehiculosuc" />
+  </wsdl:message>
+  <wsdl:message name="disminucionvehiculosucSoapOut">
+    <wsdl:part name="parameters" element="tns:disminucionvehiculosucResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtenerempleadoporidSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenerempleadoporid" />
+  </wsdl:message>
+  <wsdl:message name="obtenerempleadoporidSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenerempleadoporidResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtenerempleadosSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenerempleados" />
+  </wsdl:message>
+  <wsdl:message name="obtenerempleadosSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenerempleadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtenerempleadoshabilitadosSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenerempleadoshabilitados" />
+  </wsdl:message>
+  <wsdl:message name="obtenerempleadoshabilitadosSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenerempleadoshabilitadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtenerempleadosdeshabilitadosSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenerempleadosdeshabilitados" />
+  </wsdl:message>
+  <wsdl:message name="obtenerempleadosdeshabilitadosSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenerempleadosdeshabilitadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ingresarempleadoSoapIn">
+    <wsdl:part name="parameters" element="tns:ingresarempleado" />
+  </wsdl:message>
+  <wsdl:message name="ingresarempleadoSoapOut">
+    <wsdl:part name="parameters" element="tns:ingresarempleadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ingresarencargadoSoapIn">
+    <wsdl:part name="parameters" element="tns:ingresarencargado" />
+  </wsdl:message>
+  <wsdl:message name="ingresarencargadoSoapOut">
+    <wsdl:part name="parameters" element="tns:ingresarencargadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ingresarvendedorSoapIn">
+    <wsdl:part name="parameters" element="tns:ingresarvendedor" />
+  </wsdl:message>
+  <wsdl:message name="ingresarvendedorSoapOut">
+    <wsdl:part name="parameters" element="tns:ingresarvendedorResponse" />
+  </wsdl:message>
+  <wsdl:message name="modificarencargadoSoapIn">
+    <wsdl:part name="parameters" element="tns:modificarencargado" />
+  </wsdl:message>
+  <wsdl:message name="modificarencargadoSoapOut">
+    <wsdl:part name="parameters" element="tns:modificarencargadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="modificarvendedorSoapIn">
+    <wsdl:part name="parameters" element="tns:modificarvendedor" />
+  </wsdl:message>
+  <wsdl:message name="modificarvendedorSoapOut">
+    <wsdl:part name="parameters" element="tns:modificarvendedorResponse" />
+  </wsdl:message>
+  <wsdl:message name="cambiarimagenvSoapIn">
+    <wsdl:part name="parameters" element="tns:cambiarimagenv" />
+  </wsdl:message>
+  <wsdl:message name="cambiarimagenvSoapOut">
+    <wsdl:part name="parameters" element="tns:cambiarimagenvResponse" />
+  </wsdl:message>
+  <wsdl:message name="cambiarimageneSoapIn">
+    <wsdl:part name="parameters" element="tns:cambiarimagene" />
+  </wsdl:message>
+  <wsdl:message name="cambiarimageneSoapOut">
+    <wsdl:part name="parameters" element="tns:cambiarimageneResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtenerencargadopornickSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenerencargadopornick" />
+  </wsdl:message>
+  <wsdl:message name="obtenerencargadopornickSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenerencargadopornickResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtenervendedorpornickSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenervendedorpornick" />
+  </wsdl:message>
+  <wsdl:message name="obtenervendedorpornickSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenervendedorpornickResponse" />
+  </wsdl:message>
+  <wsdl:message name="modifempleadoSoapIn">
+    <wsdl:part name="parameters" element="tns:modifempleado" />
+  </wsdl:message>
+  <wsdl:message name="modifempleadoSoapOut">
+    <wsdl:part name="parameters" element="tns:modifempleadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="bajaempleadoSoapIn">
+    <wsdl:part name="parameters" element="tns:bajaempleado" />
+  </wsdl:message>
+  <wsdl:message name="bajaempleadoSoapOut">
+    <wsdl:part name="parameters" element="tns:bajaempleadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="busquedaempleadosSoapIn">
+    <wsdl:part name="parameters" element="tns:busquedaempleados" />
+  </wsdl:message>
+  <wsdl:message name="busquedaempleadosSoapOut">
+    <wsdl:part name="parameters" element="tns:busquedaempleadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="busquedaempleadoshabilitadosSoapIn">
+    <wsdl:part name="parameters" element="tns:busquedaempleadoshabilitados" />
+  </wsdl:message>
+  <wsdl:message name="busquedaempleadoshabilitadosSoapOut">
+    <wsdl:part name="parameters" element="tns:busquedaempleadoshabilitadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="busquedaempleadosdeshabilitadosSoapIn">
+    <wsdl:part name="parameters" element="tns:busquedaempleadosdeshabilitados" />
+  </wsdl:message>
+  <wsdl:message name="busquedaempleadosdeshabilitadosSoapOut">
+    <wsdl:part name="parameters" element="tns:busquedaempleadosdeshabilitadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtenervehiculossSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenervehiculoss" />
+  </wsdl:message>
+  <wsdl:message name="obtenervehiculossSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenervehiculossResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtenervehiculoshabilitadosSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenervehiculoshabilitados" />
+  </wsdl:message>
+  <wsdl:message name="obtenervehiculoshabilitadosSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenervehiculoshabilitadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtenervehiculosalquilerhabilitadosSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenervehiculosalquilerhabilitados" />
+  </wsdl:message>
+  <wsdl:message name="obtenervehiculosalquilerhabilitadosSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenervehiculosalquilerhabilitadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtenervehiculosventahabilitadosSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenervehiculosventahabilitados" />
+  </wsdl:message>
+  <wsdl:message name="obtenervehiculosventahabilitadosSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenervehiculosventahabilitadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtenervehiculosdeshabilitadosSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenervehiculosdeshabilitados" />
+  </wsdl:message>
+  <wsdl:message name="obtenervehiculosdeshabilitadosSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenervehiculosdeshabilitadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtenervehiculoporidSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenervehiculoporid" />
+  </wsdl:message>
+  <wsdl:message name="obtenervehiculoporidSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenervehiculoporidResponse" />
+  </wsdl:message>
+  <wsdl:message name="ingresarvehiculoSoapIn">
+    <wsdl:part name="parameters" element="tns:ingresarvehiculo" />
+  </wsdl:message>
+  <wsdl:message name="ingresarvehiculoSoapOut">
+    <wsdl:part name="parameters" element="tns:ingresarvehiculoResponse" />
+  </wsdl:message>
+  <wsdl:message name="modificarcantidadvehiculosSoapIn">
+    <wsdl:part name="parameters" element="tns:modificarcantidadvehiculos" />
+  </wsdl:message>
+  <wsdl:message name="modificarcantidadvehiculosSoapOut">
+    <wsdl:part name="parameters" element="tns:modificarcantidadvehiculosResponse" />
+  </wsdl:message>
+  <wsdl:message name="bajavehiculoSoapIn">
+    <wsdl:part name="parameters" element="tns:bajavehiculo" />
+  </wsdl:message>
+  <wsdl:message name="bajavehiculoSoapOut">
+    <wsdl:part name="parameters" element="tns:bajavehiculoResponse" />
+  </wsdl:message>
+  <wsdl:message name="disminucionvehiculoalquilerSoapIn">
+    <wsdl:part name="parameters" element="tns:disminucionvehiculoalquiler" />
+  </wsdl:message>
+  <wsdl:message name="disminucionvehiculoalquilerSoapOut">
+    <wsdl:part name="parameters" element="tns:disminucionvehiculoalquilerResponse" />
+  </wsdl:message>
+  <wsdl:message name="aumentovehiculoalquilerSoapIn">
+    <wsdl:part name="parameters" element="tns:aumentovehiculoalquiler" />
+  </wsdl:message>
+  <wsdl:message name="aumentovehiculoalquilerSoapOut">
+    <wsdl:part name="parameters" element="tns:aumentovehiculoalquilerResponse" />
+  </wsdl:message>
+  <wsdl:message name="disminucionvehiculoventaSoapIn">
+    <wsdl:part name="parameters" element="tns:disminucionvehiculoventa" />
+  </wsdl:message>
+  <wsdl:message name="disminucionvehiculoventaSoapOut">
+    <wsdl:part name="parameters" element="tns:disminucionvehiculoventaResponse" />
+  </wsdl:message>
+  <wsdl:message name="busquedavehiculosSoapIn">
+    <wsdl:part name="parameters" element="tns:busquedavehiculos" />
+  </wsdl:message>
+  <wsdl:message name="busquedavehiculosSoapOut">
+    <wsdl:part name="parameters" element="tns:busquedavehiculosResponse" />
+  </wsdl:message>
+  <wsdl:message name="busquedavehiculoshabilitadosSoapIn">
+    <wsdl:part name="parameters" element="tns:busquedavehiculoshabilitados" />
+  </wsdl:message>
+  <wsdl:message name="busquedavehiculoshabilitadosSoapOut">
+    <wsdl:part name="parameters" element="tns:busquedavehiculoshabilitadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="busquedavehiculosdeshabilitadosSoapIn">
+    <wsdl:part name="parameters" element="tns:busquedavehiculosdeshabilitados" />
+  </wsdl:message>
+  <wsdl:message name="busquedavehiculosdeshabilitadosSoapOut">
+    <wsdl:part name="parameters" element="tns:busquedavehiculosdeshabilitadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ingresarclienteSoapIn">
+    <wsdl:part name="parameters" element="tns:ingresarcliente" />
+  </wsdl:message>
+  <wsdl:message name="ingresarclienteSoapOut">
+    <wsdl:part name="parameters" element="tns:ingresarclienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtenerclienteporidSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenerclienteporid" />
+  </wsdl:message>
+  <wsdl:message name="obtenerclienteporidSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenerclienteporidResponse" />
+  </wsdl:message>
+  <wsdl:message name="ingresaralquilerSoapIn">
+    <wsdl:part name="parameters" element="tns:ingresaralquiler" />
+  </wsdl:message>
+  <wsdl:message name="ingresaralquilerSoapOut">
+    <wsdl:part name="parameters" element="tns:ingresaralquilerResponse" />
+  </wsdl:message>
+  <wsdl:message name="obteneralquilerporciclienteSoapIn">
+    <wsdl:part name="parameters" element="tns:obteneralquilerporcicliente" />
+  </wsdl:message>
+  <wsdl:message name="obteneralquilerporciclienteSoapOut">
+    <wsdl:part name="parameters" element="tns:obteneralquilerporciclienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="obteneralquileresSoapIn">
+    <wsdl:part name="parameters" element="tns:obteneralquileres" />
+  </wsdl:message>
+  <wsdl:message name="obteneralquileresSoapOut">
+    <wsdl:part name="parameters" element="tns:obteneralquileresResponse" />
+  </wsdl:message>
+  <wsdl:message name="devolveralquilerSoapIn">
+    <wsdl:part name="parameters" element="tns:devolveralquiler" />
+  </wsdl:message>
+  <wsdl:message name="devolveralquilerSoapOut">
+    <wsdl:part name="parameters" element="tns:devolveralquilerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ingresarventaSoapIn">
+    <wsdl:part name="parameters" element="tns:ingresarventa" />
+  </wsdl:message>
+  <wsdl:message name="ingresarventaSoapOut">
+    <wsdl:part name="parameters" element="tns:ingresarventaResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtenerventaporciclienteSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenerventaporcicliente" />
+  </wsdl:message>
+  <wsdl:message name="obtenerventaporciclienteSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenerventaporciclienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtenerventasSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenerventas" />
+  </wsdl:message>
+  <wsdl:message name="obtenerventasSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenerventasResponse" />
+  </wsdl:message>
+  <wsdl:message name="registrarfacturaSoapIn">
+    <wsdl:part name="parameters" element="tns:registrarfactura" />
+  </wsdl:message>
+  <wsdl:message name="registrarfacturaSoapOut">
+    <wsdl:part name="parameters" element="tns:registrarfacturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="obtenersucursalporid">
+      <wsdl:input message="tns:obtenersucursalporidSoapIn" />
+      <wsdl:output message="tns:obtenersucursalporidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenersucursales">
+      <wsdl:input message="tns:obtenersucursalesSoapIn" />
+      <wsdl:output message="tns:obtenersucursalesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenersucursaleshabilitadas">
+      <wsdl:input message="tns:obtenersucursaleshabilitadasSoapIn" />
+      <wsdl:output message="tns:obtenersucursaleshabilitadasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obteneridsucdir">
+      <wsdl:input message="tns:obteneridsucdirSoapIn" />
+      <wsdl:output message="tns:obteneridsucdirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ingresarsucursal">
+      <wsdl:input message="tns:ingresarsucursalSoapIn" />
+      <wsdl:output message="tns:ingresarsucursalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="modifsucursal">
+      <wsdl:input message="tns:modifsucursalSoapIn" />
+      <wsdl:output message="tns:modifsucursalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="bajasucursal">
+      <wsdl:input message="tns:bajasucursalSoapIn" />
+      <wsdl:output message="tns:bajasucursalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="modificarcantvehicsuc">
+      <wsdl:input message="tns:modificarcantvehicsucSoapIn" />
+      <wsdl:output message="tns:modificarcantvehicsucSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="disminucionvehiculosuc">
+      <wsdl:input message="tns:disminucionvehiculosucSoapIn" />
+      <wsdl:output message="tns:disminucionvehiculosucSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerempleadoporid">
+      <wsdl:input message="tns:obtenerempleadoporidSoapIn" />
+      <wsdl:output message="tns:obtenerempleadoporidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerempleados">
+      <wsdl:input message="tns:obtenerempleadosSoapIn" />
+      <wsdl:output message="tns:obtenerempleadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerempleadoshabilitados">
+      <wsdl:input message="tns:obtenerempleadoshabilitadosSoapIn" />
+      <wsdl:output message="tns:obtenerempleadoshabilitadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerempleadosdeshabilitados">
+      <wsdl:input message="tns:obtenerempleadosdeshabilitadosSoapIn" />
+      <wsdl:output message="tns:obtenerempleadosdeshabilitadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ingresarempleado">
+      <wsdl:input message="tns:ingresarempleadoSoapIn" />
+      <wsdl:output message="tns:ingresarempleadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ingresarencargado">
+      <wsdl:input message="tns:ingresarencargadoSoapIn" />
+      <wsdl:output message="tns:ingresarencargadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ingresarvendedor">
+      <wsdl:input message="tns:ingresarvendedorSoapIn" />
+      <wsdl:output message="tns:ingresarvendedorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="modificarencargado">
+      <wsdl:input message="tns:modificarencargadoSoapIn" />
+      <wsdl:output message="tns:modificarencargadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="modificarvendedor">
+      <wsdl:input message="tns:modificarvendedorSoapIn" />
+      <wsdl:output message="tns:modificarvendedorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cambiarimagenv">
+      <wsdl:input message="tns:cambiarimagenvSoapIn" />
+      <wsdl:output message="tns:cambiarimagenvSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cambiarimagene">
+      <wsdl:input message="tns:cambiarimageneSoapIn" />
+      <wsdl:output message="tns:cambiarimageneSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerencargadopornick">
+      <wsdl:input message="tns:obtenerencargadopornickSoapIn" />
+      <wsdl:output message="tns:obtenerencargadopornickSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenervendedorpornick">
+      <wsdl:input message="tns:obtenervendedorpornickSoapIn" />
+      <wsdl:output message="tns:obtenervendedorpornickSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="modifempleado">
+      <wsdl:input message="tns:modifempleadoSoapIn" />
+      <wsdl:output message="tns:modifempleadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="bajaempleado">
+      <wsdl:input message="tns:bajaempleadoSoapIn" />
+      <wsdl:output message="tns:bajaempleadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="busquedaempleados">
+      <wsdl:input message="tns:busquedaempleadosSoapIn" />
+      <wsdl:output message="tns:busquedaempleadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="busquedaempleadoshabilitados">
+      <wsdl:input message="tns:busquedaempleadoshabilitadosSoapIn" />
+      <wsdl:output message="tns:busquedaempleadoshabilitadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="busquedaempleadosdeshabilitados">
+      <wsdl:input message="tns:busquedaempleadosdeshabilitadosSoapIn" />
+      <wsdl:output message="tns:busquedaempleadosdeshabilitadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenervehiculoss">
+      <wsdl:input message="tns:obtenervehiculossSoapIn" />
+      <wsdl:output message="tns:obtenervehiculossSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenervehiculoshabilitados">
+      <wsdl:input message="tns:obtenervehiculoshabilitadosSoapIn" />
+      <wsdl:output message="tns:obtenervehiculoshabilitadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenervehiculosalquilerhabilitados">
+      <wsdl:input message="tns:obtenervehiculosalquilerhabilitadosSoapIn" />
+      <wsdl:output message="tns:obtenervehiculosalquilerhabilitadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenervehiculosventahabilitados">
+      <wsdl:input message="tns:obtenervehiculosventahabilitadosSoapIn" />
+      <wsdl:output message="tns:obtenervehiculosventahabilitadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenervehiculosdeshabilitados">
+      <wsdl:input message="tns:obtenervehiculosdeshabilitadosSoapIn" />
+      <wsdl:output message="tns:obtenervehiculosdeshabilitadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenervehiculoporid">
+      <wsdl:input message="tns:obtenervehiculoporidSoapIn" />
+      <wsdl:output message="tns:obtenervehiculoporidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ingresarvehiculo">
+      <wsdl:input message="tns:ingresarvehiculoSoapIn" />
+      <wsdl:output message="tns:ingresarvehiculoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="modificarcantidadvehiculos">
+      <wsdl:input message="tns:modificarcantidadvehiculosSoapIn" />
+      <wsdl:output message="tns:modificarcantidadvehiculosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="bajavehiculo">
+      <wsdl:input message="tns:bajavehiculoSoapIn" />
+      <wsdl:output message="tns:bajavehiculoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="disminucionvehiculoalquiler">
+      <wsdl:input message="tns:disminucionvehiculoalquilerSoapIn" />
+      <wsdl:output message="tns:disminucionvehiculoalquilerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="aumentovehiculoalquiler">
+      <wsdl:input message="tns:aumentovehiculoalquilerSoapIn" />
+      <wsdl:output message="tns:aumentovehiculoalquilerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="disminucionvehiculoventa">
+      <wsdl:input message="tns:disminucionvehiculoventaSoapIn" />
+      <wsdl:output message="tns:disminucionvehiculoventaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="busquedavehiculos">
+      <wsdl:input message="tns:busquedavehiculosSoapIn" />
+      <wsdl:output message="tns:busquedavehiculosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="busquedavehiculoshabilitados">
+      <wsdl:input message="tns:busquedavehiculoshabilitadosSoapIn" />
+      <wsdl:output message="tns:busquedavehiculoshabilitadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="busquedavehiculosdeshabilitados">
+      <wsdl:input message="tns:busquedavehiculosdeshabilitadosSoapIn" />
+      <wsdl:output message="tns:busquedavehiculosdeshabilitadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ingresarcliente">
+      <wsdl:input message="tns:ingresarclienteSoapIn" />
+      <wsdl:output message="tns:ingresarclienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerclienteporid">
+      <wsdl:input message="tns:obtenerclienteporidSoapIn" />
+      <wsdl:output message="tns:obtenerclienteporidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ingresaralquiler">
+      <wsdl:input message="tns:ingresaralquilerSoapIn" />
+      <wsdl:output message="tns:ingresaralquilerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obteneralquilerporcicliente">
+      <wsdl:input message="tns:obteneralquilerporciclienteSoapIn" />
+      <wsdl:output message="tns:obteneralquilerporciclienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obteneralquileres">
+      <wsdl:input message="tns:obteneralquileresSoapIn" />
+      <wsdl:output message="tns:obteneralquileresSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="devolveralquiler">
+      <wsdl:input message="tns:devolveralquilerSoapIn" />
+      <wsdl:output message="tns:devolveralquilerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ingresarventa">
+      <wsdl:input message="tns:ingresarventaSoapIn" />
+      <wsdl:output message="tns:ingresarventaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerventaporcicliente">
+      <wsdl:input message="tns:obtenerventaporciclienteSoapIn" />
+      <wsdl:output message="tns:obtenerventaporciclienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerventas">
+      <wsdl:input message="tns:obtenerventasSoapIn" />
+      <wsdl:output message="tns:obtenerventasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="registrarfactura">
+      <wsdl:input message="tns:registrarfacturaSoapIn" />
+      <wsdl:output message="tns:registrarfacturaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="obtenersucursalporid">
+      <soap:operation soapAction="http://tempuri.org/obtenersucursalporid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenersucursales">
+      <soap:operation soapAction="http://tempuri.org/obtenersucursales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenersucursaleshabilitadas">
+      <soap:operation soapAction="http://tempuri.org/obtenersucursaleshabilitadas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obteneridsucdir">
+      <soap:operation soapAction="http://tempuri.org/obteneridsucdir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresarsucursal">
+      <soap:operation soapAction="http://tempuri.org/ingresarsucursal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifsucursal">
+      <soap:operation soapAction="http://tempuri.org/modifsucursal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bajasucursal">
+      <soap:operation soapAction="http://tempuri.org/bajasucursal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modificarcantvehicsuc">
+      <soap:operation soapAction="http://tempuri.org/modificarcantvehicsuc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="disminucionvehiculosuc">
+      <soap:operation soapAction="http://tempuri.org/disminucionvehiculosuc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerempleadoporid">
+      <soap:operation soapAction="http://tempuri.org/obtenerempleadoporid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerempleados">
+      <soap:operation soapAction="http://tempuri.org/obtenerempleados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerempleadoshabilitados">
+      <soap:operation soapAction="http://tempuri.org/obtenerempleadoshabilitados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerempleadosdeshabilitados">
+      <soap:operation soapAction="http://tempuri.org/obtenerempleadosdeshabilitados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresarempleado">
+      <soap:operation soapAction="http://tempuri.org/ingresarempleado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresarencargado">
+      <soap:operation soapAction="http://tempuri.org/ingresarencargado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresarvendedor">
+      <soap:operation soapAction="http://tempuri.org/ingresarvendedor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modificarencargado">
+      <soap:operation soapAction="http://tempuri.org/modificarencargado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modificarvendedor">
+      <soap:operation soapAction="http://tempuri.org/modificarvendedor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cambiarimagenv">
+      <soap:operation soapAction="http://tempuri.org/cambiarimagenv" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cambiarimagene">
+      <soap:operation soapAction="http://tempuri.org/cambiarimagene" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerencargadopornick">
+      <soap:operation soapAction="http://tempuri.org/obtenerencargadopornick" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenervendedorpornick">
+      <soap:operation soapAction="http://tempuri.org/obtenervendedorpornick" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifempleado">
+      <soap:operation soapAction="http://tempuri.org/modifempleado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bajaempleado">
+      <soap:operation soapAction="http://tempuri.org/bajaempleado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="busquedaempleados">
+      <soap:operation soapAction="http://tempuri.org/busquedaempleados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="busquedaempleadoshabilitados">
+      <soap:operation soapAction="http://tempuri.org/busquedaempleadoshabilitados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="busquedaempleadosdeshabilitados">
+      <soap:operation soapAction="http://tempuri.org/busquedaempleadosdeshabilitados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenervehiculoss">
+      <soap:operation soapAction="http://tempuri.org/obtenervehiculoss" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenervehiculoshabilitados">
+      <soap:operation soapAction="http://tempuri.org/obtenervehiculoshabilitados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenervehiculosalquilerhabilitados">
+      <soap:operation soapAction="http://tempuri.org/obtenervehiculosalquilerhabilitados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenervehiculosventahabilitados">
+      <soap:operation soapAction="http://tempuri.org/obtenervehiculosventahabilitados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenervehiculosdeshabilitados">
+      <soap:operation soapAction="http://tempuri.org/obtenervehiculosdeshabilitados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenervehiculoporid">
+      <soap:operation soapAction="http://tempuri.org/obtenervehiculoporid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresarvehiculo">
+      <soap:operation soapAction="http://tempuri.org/ingresarvehiculo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modificarcantidadvehiculos">
+      <soap:operation soapAction="http://tempuri.org/modificarcantidadvehiculos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bajavehiculo">
+      <soap:operation soapAction="http://tempuri.org/bajavehiculo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="disminucionvehiculoalquiler">
+      <soap:operation soapAction="http://tempuri.org/disminucionvehiculoalquiler" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="aumentovehiculoalquiler">
+      <soap:operation soapAction="http://tempuri.org/aumentovehiculoalquiler" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="disminucionvehiculoventa">
+      <soap:operation soapAction="http://tempuri.org/disminucionvehiculoventa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="busquedavehiculos">
+      <soap:operation soapAction="http://tempuri.org/busquedavehiculos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="busquedavehiculoshabilitados">
+      <soap:operation soapAction="http://tempuri.org/busquedavehiculoshabilitados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="busquedavehiculosdeshabilitados">
+      <soap:operation soapAction="http://tempuri.org/busquedavehiculosdeshabilitados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresarcliente">
+      <soap:operation soapAction="http://tempuri.org/ingresarcliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerclienteporid">
+      <soap:operation soapAction="http://tempuri.org/obtenerclienteporid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresaralquiler">
+      <soap:operation soapAction="http://tempuri.org/ingresaralquiler" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obteneralquilerporcicliente">
+      <soap:operation soapAction="http://tempuri.org/obteneralquilerporcicliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obteneralquileres">
+      <soap:operation soapAction="http://tempuri.org/obteneralquileres" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="devolveralquiler">
+      <soap:operation soapAction="http://tempuri.org/devolveralquiler" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresarventa">
+      <soap:operation soapAction="http://tempuri.org/ingresarventa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerventaporcicliente">
+      <soap:operation soapAction="http://tempuri.org/obtenerventaporcicliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerventas">
+      <soap:operation soapAction="http://tempuri.org/obtenerventas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registrarfactura">
+      <soap:operation soapAction="http://tempuri.org/registrarfactura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="obtenersucursalporid">
+      <soap12:operation soapAction="http://tempuri.org/obtenersucursalporid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenersucursales">
+      <soap12:operation soapAction="http://tempuri.org/obtenersucursales" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenersucursaleshabilitadas">
+      <soap12:operation soapAction="http://tempuri.org/obtenersucursaleshabilitadas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obteneridsucdir">
+      <soap12:operation soapAction="http://tempuri.org/obteneridsucdir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresarsucursal">
+      <soap12:operation soapAction="http://tempuri.org/ingresarsucursal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifsucursal">
+      <soap12:operation soapAction="http://tempuri.org/modifsucursal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bajasucursal">
+      <soap12:operation soapAction="http://tempuri.org/bajasucursal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modificarcantvehicsuc">
+      <soap12:operation soapAction="http://tempuri.org/modificarcantvehicsuc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="disminucionvehiculosuc">
+      <soap12:operation soapAction="http://tempuri.org/disminucionvehiculosuc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerempleadoporid">
+      <soap12:operation soapAction="http://tempuri.org/obtenerempleadoporid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerempleados">
+      <soap12:operation soapAction="http://tempuri.org/obtenerempleados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerempleadoshabilitados">
+      <soap12:operation soapAction="http://tempuri.org/obtenerempleadoshabilitados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerempleadosdeshabilitados">
+      <soap12:operation soapAction="http://tempuri.org/obtenerempleadosdeshabilitados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresarempleado">
+      <soap12:operation soapAction="http://tempuri.org/ingresarempleado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresarencargado">
+      <soap12:operation soapAction="http://tempuri.org/ingresarencargado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresarvendedor">
+      <soap12:operation soapAction="http://tempuri.org/ingresarvendedor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modificarencargado">
+      <soap12:operation soapAction="http://tempuri.org/modificarencargado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modificarvendedor">
+      <soap12:operation soapAction="http://tempuri.org/modificarvendedor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cambiarimagenv">
+      <soap12:operation soapAction="http://tempuri.org/cambiarimagenv" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cambiarimagene">
+      <soap12:operation soapAction="http://tempuri.org/cambiarimagene" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerencargadopornick">
+      <soap12:operation soapAction="http://tempuri.org/obtenerencargadopornick" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenervendedorpornick">
+      <soap12:operation soapAction="http://tempuri.org/obtenervendedorpornick" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifempleado">
+      <soap12:operation soapAction="http://tempuri.org/modifempleado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bajaempleado">
+      <soap12:operation soapAction="http://tempuri.org/bajaempleado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="busquedaempleados">
+      <soap12:operation soapAction="http://tempuri.org/busquedaempleados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="busquedaempleadoshabilitados">
+      <soap12:operation soapAction="http://tempuri.org/busquedaempleadoshabilitados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="busquedaempleadosdeshabilitados">
+      <soap12:operation soapAction="http://tempuri.org/busquedaempleadosdeshabilitados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenervehiculoss">
+      <soap12:operation soapAction="http://tempuri.org/obtenervehiculoss" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenervehiculoshabilitados">
+      <soap12:operation soapAction="http://tempuri.org/obtenervehiculoshabilitados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenervehiculosalquilerhabilitados">
+      <soap12:operation soapAction="http://tempuri.org/obtenervehiculosalquilerhabilitados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenervehiculosventahabilitados">
+      <soap12:operation soapAction="http://tempuri.org/obtenervehiculosventahabilitados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenervehiculosdeshabilitados">
+      <soap12:operation soapAction="http://tempuri.org/obtenervehiculosdeshabilitados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenervehiculoporid">
+      <soap12:operation soapAction="http://tempuri.org/obtenervehiculoporid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresarvehiculo">
+      <soap12:operation soapAction="http://tempuri.org/ingresarvehiculo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modificarcantidadvehiculos">
+      <soap12:operation soapAction="http://tempuri.org/modificarcantidadvehiculos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bajavehiculo">
+      <soap12:operation soapAction="http://tempuri.org/bajavehiculo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="disminucionvehiculoalquiler">
+      <soap12:operation soapAction="http://tempuri.org/disminucionvehiculoalquiler" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="aumentovehiculoalquiler">
+      <soap12:operation soapAction="http://tempuri.org/aumentovehiculoalquiler" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="disminucionvehiculoventa">
+      <soap12:operation soapAction="http://tempuri.org/disminucionvehiculoventa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="busquedavehiculos">
+      <soap12:operation soapAction="http://tempuri.org/busquedavehiculos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="busquedavehiculoshabilitados">
+      <soap12:operation soapAction="http://tempuri.org/busquedavehiculoshabilitados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="busquedavehiculosdeshabilitados">
+      <soap12:operation soapAction="http://tempuri.org/busquedavehiculosdeshabilitados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresarcliente">
+      <soap12:operation soapAction="http://tempuri.org/ingresarcliente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerclienteporid">
+      <soap12:operation soapAction="http://tempuri.org/obtenerclienteporid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresaralquiler">
+      <soap12:operation soapAction="http://tempuri.org/ingresaralquiler" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obteneralquilerporcicliente">
+      <soap12:operation soapAction="http://tempuri.org/obteneralquilerporcicliente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obteneralquileres">
+      <soap12:operation soapAction="http://tempuri.org/obteneralquileres" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="devolveralquiler">
+      <soap12:operation soapAction="http://tempuri.org/devolveralquiler" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresarventa">
+      <soap12:operation soapAction="http://tempuri.org/ingresarventa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerventaporcicliente">
+      <soap12:operation soapAction="http://tempuri.org/obtenerventaporcicliente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerventas">
+      <soap12:operation soapAction="http://tempuri.org/obtenerventas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registrarfactura">
+      <soap12:operation soapAction="http://tempuri.org/registrarfactura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://localhost:41678/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://localhost:41678/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/DSVentaAlquiler.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/DSVentaAlquiler.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/DSVentaAlquiler.xsd" id="DSVentaAlquiler" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="DSVentaAlquiler">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Empleado">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CI_Empleado" type="xs:int" />
+              <xs:element name="Nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ApellidoP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ApellidoM">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FechaNacimiento" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="Email">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Celular">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Estado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Latencia">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ocupacion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CI_Admin" type="xs:int" />
+              <xs:element name="ID_Sucursal" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Sucursal">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" name="ID_Sucursal" type="xs:int" />
+              <xs:element name="Direccion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Zona">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Telefono">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CantidadVehiculos" type="xs:int" />
+              <xs:element name="CantidadMaxVehiculos" type="xs:int" />
+              <xs:element name="CI_Admin" type="xs:int" />
+              <xs:element name="Estado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EncargadoAlquiler">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UsuarioE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContraseñaE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CI_Empleado" type="xs:int" />
+              <xs:element minOccurs="0" name="Imagen">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Vendedor">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UsuarioV">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContraV">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CI_Empleado" type="xs:int" />
+              <xs:element minOccurs="0" name="Imagen">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Vehiculo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" name="ID_Vehiculo" type="xs:int" />
+              <xs:element name="CostoVenta" type="xs:double" />
+              <xs:element name="CostoAlquiler" type="xs:double" />
+              <xs:element name="UrlModelo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Dimensiones">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Transmision">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CantidadStock" type="xs:int" />
+              <xs:element name="Imagen">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Modelo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Seguridad">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Motor">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Marca">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Asientos">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CI_Admin" type="xs:int" />
+              <xs:element name="ID_Sucursal" type="xs:int" />
+              <xs:element name="AlquilerOVenta">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Estado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Cliente">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CI_Cliente" type="xs:int" />
+              <xs:element name="Nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ApellidoP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ApellidoM">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Celular">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="Email">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Direccion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NCuentaBancaria">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Alquiler">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FechaInicio" type="xs:dateTime" />
+              <xs:element name="FechaFinal" type="xs:dateTime" />
+              <xs:element name="FechaA" type="xs:dateTime" />
+              <xs:element name="TotalA" type="xs:int" />
+              <xs:element name="Plazo" type="xs:int" />
+              <xs:element name="CI_Empleado" type="xs:int" />
+              <xs:element name="CI_Cliente" type="xs:int" />
+              <xs:element name="ID_Vehiculo" type="xs:int" />
+              <xs:element name="Estado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Venta">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" name="NumeroFactura" type="xs:int" />
+              <xs:element name="CI_Empleado" type="xs:int" />
+              <xs:element name="ID_Vehiculo" type="xs:int" />
+              <xs:element name="CI_Cliente" type="xs:int" />
+              <xs:element name="FechaV" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Factura">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NumeroFactura" type="xs:int" />
+              <xs:element name="NITCI_Cliente">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NIT_Empresa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NumeroAutorizacion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalF" type="xs:double" />
+              <xs:element name="CodigoControl">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CI_Empleado" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique msdata:PrimaryKey="true" name="Constraint1">
+      <xs:selector xpath=".//mstns:Empleado" />
+      <xs:field xpath="mstns:CI_Empleado" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="Sucursal_Constraint1">
+      <xs:selector xpath=".//mstns:Sucursal" />
+      <xs:field xpath="mstns:ID_Sucursal" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="Vehiculo_Constraint1">
+      <xs:selector xpath=".//mstns:Vehiculo" />
+      <xs:field xpath="mstns:ID_Vehiculo" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="Cliente_Constraint1">
+      <xs:selector xpath=".//mstns:Cliente" />
+      <xs:field xpath="mstns:CI_Cliente" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="Factura_Constraint1">
+      <xs:selector xpath=".//mstns:Factura" />
+      <xs:field xpath="mstns:NumeroFactura" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_Empleado_Sucursal" msdata:parent="Sucursal" msdata:child="Empleado" msdata:parentkey="ID_Sucursal" msdata:childkey="ID_Sucursal" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" />
+      <msdata:Relationship name="FK_Vehiculo_Sucursal" msdata:parent="Sucursal" msdata:child="Vehiculo" msdata:parentkey="ID_Sucursal" msdata:childkey="ID_Sucursal" />
+      <msdata:Relationship name="FK_Alquiler_Cliente" msdata:parent="Cliente" msdata:child="Alquiler" msdata:parentkey="CI_Cliente" msdata:childkey="CI_Cliente" />
+      <msdata:Relationship name="FK_Alquiler_Empleado" msdata:parent="Empleado" msdata:child="Alquiler" msdata:parentkey="CI_Empleado" msdata:childkey="CI_Empleado" />
+      <msdata:Relationship name="FK_Alquiler_Vehiculo" msdata:parent="Vehiculo" msdata:child="Alquiler" msdata:parentkey="ID_Vehiculo" msdata:childkey="ID_Vehiculo" />
+      <msdata:Relationship name="FK_Venta_Cliente" msdata:parent="Cliente" msdata:child="Venta" msdata:parentkey="CI_Cliente" msdata:childkey="CI_Cliente" />
+      <msdata:Relationship name="FK_Venta_Empleado" msdata:parent="Empleado" msdata:child="Venta" msdata:parentkey="CI_Empleado" msdata:childkey="CI_Empleado" />
+      <msdata:Relationship name="FK_Factura_Empleado" msdata:parent="Empleado" msdata:child="Factura" msdata:parentkey="CI_Empleado" msdata:childkey="CI_Empleado" />
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_Empleado_Sucursal" msdata:parent="Sucursal" msdata:child="Empleado" msdata:parentkey="ID_Sucursal" msdata:childkey="ID_Sucursal" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" />
+      <msdata:Relationship name="FK_Vehiculo_Sucursal" msdata:parent="Sucursal" msdata:child="Vehiculo" msdata:parentkey="ID_Sucursal" msdata:childkey="ID_Sucursal" />
+      <msdata:Relationship name="FK_Alquiler_Cliente" msdata:parent="Cliente" msdata:child="Alquiler" msdata:parentkey="CI_Cliente" msdata:childkey="CI_Cliente" />
+      <msdata:Relationship name="FK_Alquiler_Empleado" msdata:parent="Empleado" msdata:child="Alquiler" msdata:parentkey="CI_Empleado" msdata:childkey="CI_Empleado" />
+      <msdata:Relationship name="FK_Alquiler_Vehiculo" msdata:parent="Vehiculo" msdata:child="Alquiler" msdata:parentkey="ID_Vehiculo" msdata:childkey="ID_Vehiculo" />
+      <msdata:Relationship name="FK_Venta_Cliente" msdata:parent="Cliente" msdata:child="Venta" msdata:parentkey="CI_Cliente" msdata:childkey="CI_Cliente" />
+      <msdata:Relationship name="FK_Venta_Empleado" msdata:parent="Empleado" msdata:child="Venta" msdata:parentkey="CI_Empleado" msdata:childkey="CI_Empleado" />
+      <msdata:Relationship name="FK_Factura_Empleado" msdata:parent="Empleado" msdata:child="Factura" msdata:parentkey="CI_Empleado" msdata:childkey="CI_Empleado" />
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_Empleado_Sucursal" msdata:parent="Sucursal" msdata:child="Empleado" msdata:parentkey="ID_Sucursal" msdata:childkey="ID_Sucursal" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" />
+      <msdata:Relationship name="FK_Vehiculo_Sucursal" msdata:parent="Sucursal" msdata:child="Vehiculo" msdata:parentkey="ID_Sucursal" msdata:childkey="ID_Sucursal" />
+      <msdata:Relationship name="FK_Alquiler_Cliente" msdata:parent="Cliente" msdata:child="Alquiler" msdata:parentkey="CI_Cliente" msdata:childkey="CI_Cliente" />
+      <msdata:Relationship name="FK_Alquiler_Empleado" msdata:parent="Empleado" msdata:child="Alquiler" msdata:parentkey="CI_Empleado" msdata:childkey="CI_Empleado" />
+      <msdata:Relationship name="FK_Alquiler_Vehiculo" msdata:parent="Vehiculo" msdata:child="Alquiler" msdata:parentkey="ID_Vehiculo" msdata:childkey="ID_Vehiculo" />
+      <msdata:Relationship name="FK_Venta_Cliente" msdata:parent="Cliente" msdata:child="Venta" msdata:parentkey="CI_Cliente" msdata:childkey="CI_Cliente" />
+      <msdata:Relationship name="FK_Venta_Empleado" msdata:parent="Empleado" msdata:child="Venta" msdata:parentkey="CI_Empleado" msdata:childkey="CI_Empleado" />
+      <msdata:Relationship name="FK_Factura_Empleado" msdata:parent="Empleado" msdata:child="Factura" msdata:parentkey="CI_Empleado" msdata:childkey="CI_Empleado" />
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_Empleado_Sucursal" msdata:parent="Sucursal" msdata:child="Empleado" msdata:parentkey="ID_Sucursal" msdata:childkey="ID_Sucursal" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" />
+      <msdata:Relationship name="FK_Vehiculo_Sucursal" msdata:parent="Sucursal" msdata:child="Vehiculo" msdata:parentkey="ID_Sucursal" msdata:childkey="ID_Sucursal" />
+      <msdata:Relationship name="FK_Alquiler_Cliente" msdata:parent="Cliente" msdata:child="Alquiler" msdata:parentkey="CI_Cliente" msdata:childkey="CI_Cliente" />
+      <msdata:Relationship name="FK_Alquiler_Empleado" msdata:parent="Empleado" msdata:child="Alquiler" msdata:parentkey="CI_Empleado" msdata:childkey="CI_Empleado" />
+      <msdata:Relationship name="FK_Alquiler_Vehiculo" msdata:parent="Vehiculo" msdata:child="Alquiler" msdata:parentkey="ID_Vehiculo" msdata:childkey="ID_Vehiculo" />
+      <msdata:Relationship name="FK_Venta_Cliente" msdata:parent="Cliente" msdata:child="Venta" msdata:parentkey="CI_Cliente" msdata:childkey="CI_Cliente" />
+      <msdata:Relationship name="FK_Venta_Empleado" msdata:parent="Empleado" msdata:child="Venta" msdata:parentkey="CI_Empleado" msdata:childkey="CI_Empleado" />
+      <msdata:Relationship name="FK_Factura_Empleado" msdata:parent="Empleado" msdata:child="Factura" msdata:parentkey="CI_Empleado" msdata:childkey="CI_Empleado" />
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_Empleado_Sucursal" msdata:parent="Sucursal" msdata:child="Empleado" msdata:parentkey="ID_Sucursal" msdata:childkey="ID_Sucursal" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" />
+      <msdata:Relationship name="FK_Vehiculo_Sucursal" msdata:parent="Sucursal" msdata:child="Vehiculo" msdata:parentkey="ID_Sucursal" msdata:childkey="ID_Sucursal" />
+      <msdata:Relationship name="FK_Alquiler_Cliente" msdata:parent="Cliente" msdata:child="Alquiler" msdata:parentkey="CI_Cliente" msdata:childkey="CI_Cliente" />
+      <msdata:Relationship name="FK_Alquiler_Empleado" msdata:parent="Empleado" msdata:child="Alquiler" msdata:parentkey="CI_Empleado" msdata:childkey="CI_Empleado" />
+      <msdata:Relationship name="FK_Alquiler_Vehiculo" msdata:parent="Vehiculo" msdata:child="Alquiler" msdata:parentkey="ID_Vehiculo" msdata:childkey="ID_Vehiculo" />
+      <msdata:Relationship name="FK_Venta_Cliente" msdata:parent="Cliente" msdata:child="Venta" msdata:parentkey="CI_Cliente" msdata:childkey="CI_Cliente" />
+      <msdata:Relationship name="FK_Venta_Empleado" msdata:parent="Empleado" msdata:child="Venta" msdata:parentkey="CI_Empleado" msdata:childkey="CI_Empleado" />
+      <msdata:Relationship name="FK_Factura_Empleado" msdata:parent="Empleado" msdata:child="Factura" msdata:parentkey="CI_Empleado" msdata:childkey="CI_Empleado" />
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_Empleado_Sucursal" msdata:parent="Sucursal" msdata:child="Empleado" msdata:parentkey="ID_Sucursal" msdata:childkey="ID_Sucursal" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" />
+      <msdata:Relationship name="FK_Vehiculo_Sucursal" msdata:parent="Sucursal" msdata:child="Vehiculo" msdata:parentkey="ID_Sucursal" msdata:childkey="ID_Sucursal" />
+      <msdata:Relationship name="FK_Alquiler_Cliente" msdata:parent="Cliente" msdata:child="Alquiler" msdata:parentkey="CI_Cliente" msdata:childkey="CI_Cliente" />
+      <msdata:Relationship name="FK_Alquiler_Empleado" msdata:parent="Empleado" msdata:child="Alquiler" msdata:parentkey="CI_Empleado" msdata:childkey="CI_Empleado" />
+      <msdata:Relationship name="FK_Alquiler_Vehiculo" msdata:parent="Vehiculo" msdata:child="Alquiler" msdata:parentkey="ID_Vehiculo" msdata:childkey="ID_Vehiculo" />
+      <msdata:Relationship name="FK_Venta_Cliente" msdata:parent="Cliente" msdata:child="Venta" msdata:parentkey="CI_Cliente" msdata:childkey="CI_Cliente" />
+      <msdata:Relationship name="FK_Venta_Empleado" msdata:parent="Empleado" msdata:child="Venta" msdata:parentkey="CI_Empleado" msdata:childkey="CI_Empleado" />
+      <msdata:Relationship name="FK_Factura_Empleado" msdata:parent="Empleado" msdata:child="Factura" msdata:parentkey="CI_Empleado" msdata:childkey="CI_Empleado" />
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_Empleado_Sucursal" msdata:parent="Sucursal" msdata:child="Empleado" msdata:parentkey="ID_Sucursal" msdata:childkey="ID_Sucursal" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" />
+      <msdata:Relationship name="FK_Vehiculo_Sucursal" msdata:parent="Sucursal" msdata:child="Vehiculo" msdata:parentkey="ID_Sucursal" msdata:childkey="ID_Sucursal" />
+      <msdata:Relationship name="FK_Alquiler_Cliente" msdata:parent="Cliente" msdata:child="Alquiler" msdata:parentkey="CI_Cliente" msdata:childkey="CI_Cliente" />
+      <msdata:Relationship name="FK_Alquiler_Empleado" msdata:parent="Empleado" msdata:child="Alquiler" msdata:parentkey="CI_Empleado" msdata:childkey="CI_Empleado" />
+      <msdata:Relationship name="FK_Alquiler_Vehiculo" msdata:parent="Vehiculo" msdata:child="Alquiler" msdata:parentkey="ID_Vehiculo" msdata:childkey="ID_Vehiculo" />
+      <msdata:Relationship name="FK_Venta_Cliente" msdata:parent="Cliente" msdata:child="Venta" msdata:parentkey="CI_Cliente" msdata:childkey="CI_Cliente" />
+      <msdata:Relationship name="FK_Venta_Empleado" msdata:parent="Empleado" msdata:child="Venta" msdata:parentkey="CI_Empleado" msdata:childkey="CI_Empleado" />
+      <msdata:Relationship name="FK_Factura_Empleado" msdata:parent="Empleado" msdata:child="Factura" msdata:parentkey="CI_Empleado" msdata:childkey="CI_Empleado" />
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_Empleado_Sucursal" msdata:parent="Sucursal" msdata:child="Empleado" msdata:parentkey="ID_Sucursal" msdata:childkey="ID_Sucursal" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" />
+      <msdata:Relationship name="FK_Vehiculo_Sucursal" msdata:parent="Sucursal" msdata:child="Vehiculo" msdata:parentkey="ID_Sucursal" msdata:childkey="ID_Sucursal" />
+      <msdata:Relationship name="FK_Alquiler_Cliente" msdata:parent="Cliente" msdata:child="Alquiler" msdata:parentkey="CI_Cliente" msdata:childkey="CI_Cliente" />
+      <msdata:Relationship name="FK_Alquiler_Empleado" msdata:parent="Empleado" msdata:child="Alquiler" msdata:parentkey="CI_Empleado" msdata:childkey="CI_Empleado" />
+      <msdata:Relationship name="FK_Alquiler_Vehiculo" msdata:parent="Vehiculo" msdata:child="Alquiler" msdata:parentkey="ID_Vehiculo" msdata:childkey="ID_Vehiculo" />
+      <msdata:Relationship name="FK_Venta_Cliente" msdata:parent="Cliente" msdata:child="Venta" msdata:parentkey="CI_Cliente" msdata:childkey="CI_Cliente" />
+      <msdata:Relationship name="FK_Venta_Empleado" msdata:parent="Empleado" msdata:child="Venta" msdata:parentkey="CI_Empleado" msdata:childkey="CI_Empleado" />
+      <msdata:Relationship name="FK_Factura_Empleado" msdata:parent="Empleado" msdata:child="Factura" msdata:parentkey="CI_Empleado" msdata:childkey="CI_Empleado" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

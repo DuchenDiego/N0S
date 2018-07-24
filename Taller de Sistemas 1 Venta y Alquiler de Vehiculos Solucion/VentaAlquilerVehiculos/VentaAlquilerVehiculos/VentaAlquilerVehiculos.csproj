@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC5CCB3A-958C-479B-BA75-9D3A040170F1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VentaAlquilerVehiculos</RootNamespace>
+    <AssemblyName>VentaAlquilerVehiculos</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="itextsharp">
+      <HintPath>.\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>.\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra">
+      <HintPath>.\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagingToolkit.QRCode">
+      <HintPath>..\packages\MessagingToolkit.QRCode.1.3.0\lib\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\font-awesome.min.css" />
+    <Content Include="assets\css\ie8.css" />
+    <Content Include="assets\css\ie9.css" />
+    <Content Include="assets\css\images\bg01.png" />
+    <Content Include="assets\css\images\bg02.png" />
+    <Content Include="assets\css\images\bg03.png" />
+    <Content Include="assets\css\images\bg04.png" />
+    <Content Include="BajaEmpleado.aspx" />
+    <Content Include="BajaVehiculo.aspx" />
+    <Content Include="BusquedaEmpleado.aspx" />
+    <Content Include="assets\css\images\ie\grad0-20.svg" />
+    <Content Include="assets\css\images\ie\grad0-35.svg" />
+    <Content Include="assets\css\images\ie\grad35-0.svg" />
+    <Content Include="assets\css\main.css" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\js\ie\backgroundsize.min.htc" />
+    <Content Include="assets\js\ie\html5shiv.js" />
+    <Content Include="assets\js\ie\PIE.htc" />
+    <Content Include="assets\js\ie\respond.min.js" />
+    <Content Include="assets\js\jquery.dropotron.min.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\main.js" />
+    <Content Include="assets\js\skel-viewport.min.js" />
+    <Content Include="assets\js\skel.min.js" />
+    <Content Include="assets\js\util.js" />
+    <Content Include="BajaSucursal.aspx" />
+    <Content Include="BusquedaVehiculo.aspx" />
+    <Content Include="CambiarFotoAlq.aspx" />
+    <Content Include="CambiarFotoVen.aspx" />
+    <Content Include="CerrarSesion.aspx" />
+    <Content Include="Contactanos.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="DetalleVehicInv.aspx" />
+    <Content Include="HomeAdmin.aspx" />
+    <Content Include="HomeInvitado.aspx" />
+    <Content Include="HomeVenta.aspx" />
+    <Content Include="Imagenes\banneradmin.jpg" />
+    <Content Include="Imagenes\bannerencargado.jpg" />
+    <Content Include="Imagenes\bannerinvitado.jpg" />
+    <Content Include="Imagenes\correo.png" />
+    <Content Include="Imagenes\fb.png" />
+    <Content Include="Imagenes\iconopdf.ico" />
+    <Content Include="Imagenes\loc.jpg" />
+    <Content Include="Imagenes\mail.png" />
+    <Content Include="Imagenes\pdf.png" />
+    <Content Include="Imagenes\tel.png" />
+    <Content Include="Imagenes\twiter.png" />
+    <Content Include="Imagenes\usuario.png" />
+    <Content Include="Imagenes\wallup.jpg" />
+    <Content Include="Imagenes\bannervendedor.jpg" />
+    <Content Include="InformesAlquiler.aspx" />
+    <Content Include="InformeVentas.aspx" />
+    <Content Include="Maps.aspx" />
+    <Content Include="ModEmpleado.aspx" />
+    <Content Include="ModInEmpleado.aspx" />
+    <Content Include="ModInSucursal.aspx" />
+    <Content Include="ModInVehiculo.aspx" />
+    <Content Include="ModSucursal.aspx" />
+    <Content Include="HomeAlquiler.aspx" />
+    <Content Include="ModVehiculo.aspx" />
+    <Content Include="RegistrarAlquiler.aspx" />
+    <Content Include="RegistrarVenta.aspx" />
+    <Content Include="RegistroEmpleado.aspx" />
+    <Content Include="RegistroSucursal.aspx" />
+    <Content Include="RegistroVehiculo.aspx" />
+    <Content Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="packages.config" />
+    <Content Include="MenuAlquiler.Master" />
+    <Content Include="MenuVenta.Master" />
+    <Content Include="MenuInvitado.Master" />
+    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <Content Include="Scripts\nugetexample.js" />
+    <Content Include="styles\jquery-ui.css" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="VisorFactura.aspx" />
+    <Content Include="VisorReporteAlquiler.aspx" />
+    <Content Include="Web References\RefserviciowebVentaAlquiler\DSVentaAlquiler.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.min.map" />
+    <None Include="Web References\RefserviciowebVentaAlquiler\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\RefserviciowebVentaAlquiler\Service.disco" />
+    <Content Include="Web.config" />
+    <None Include="Web References\RefserviciowebVentaAlquiler\Service.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllegedRC4.cs" />
+    <Compile Include="BajaEmpleado.aspx.cs">
+      <DependentUpon>BajaEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BajaEmpleado.aspx.designer.cs">
+      <DependentUpon>BajaEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BajaSucursal.aspx.cs">
+      <DependentUpon>BajaSucursal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BajaSucursal.aspx.designer.cs">
+      <DependentUpon>BajaSucursal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BajaVehiculo.aspx.cs">
+      <DependentUpon>BajaVehiculo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BajaVehiculo.aspx.designer.cs">
+      <DependentUpon>BajaVehiculo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Base64SIN.cs" />
+    <Compile Include="BusquedaEmpleado.aspx.cs">
+      <DependentUpon>BusquedaEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaEmpleado.aspx.designer.cs">
+      <DependentUpon>BusquedaEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaVehiculo.aspx.cs">
+      <DependentUpon>BusquedaVehiculo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusquedaVehiculo.aspx.designer.cs">
+      <DependentUpon>BusquedaVehiculo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CambiarFotoAlq.aspx.cs">
+      <DependentUpon>CambiarFotoAlq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CambiarFotoAlq.aspx.designer.cs">
+      <DependentUpon>CambiarFotoAlq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CambiarFotoVen.aspx.cs">
+      <DependentUpon>CambiarFotoVen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CambiarFotoVen.aspx.designer.cs">
+      <DependentUpon>CambiarFotoVen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CerrarSesion.aspx.cs">
+      <DependentUpon>CerrarSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CerrarSesion.aspx.designer.cs">
+      <DependentUpon>CerrarSesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contactanos.aspx.cs">
+      <DependentUpon>Contactanos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contactanos.aspx.designer.cs">
+      <DependentUpon>Contactanos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ControlCode.cs" />
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleVehicInv.aspx.cs">
+      <DependentUpon>DetalleVehicInv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalleVehicInv.aspx.designer.cs">
+      <DependentUpon>DetalleVehicInv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Factura.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Factura.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HomeAdmin.aspx.cs">
+      <DependentUpon>HomeAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeAdmin.aspx.designer.cs">
+      <DependentUpon>HomeAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeInvitado.aspx.cs">
+      <DependentUpon>HomeInvitado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeInvitado.aspx.designer.cs">
+      <DependentUpon>HomeInvitado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeVenta.aspx.cs">
+      <DependentUpon>HomeVenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeVenta.aspx.designer.cs">
+      <DependentUpon>HomeVenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InformesAlquiler.aspx.cs">
+      <DependentUpon>InformesAlquiler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InformesAlquiler.aspx.designer.cs">
+      <DependentUpon>InformesAlquiler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InformeVentas.aspx.cs">
+      <DependentUpon>InformeVentas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InformeVentas.aspx.designer.cs">
+      <DependentUpon>InformeVentas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maps.aspx.cs">
+      <DependentUpon>Maps.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maps.aspx.designer.cs">
+      <DependentUpon>Maps.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAdmin.Master.cs">
+      <DependentUpon>MenuAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuAdmin.Master.designer.cs">
+      <DependentUpon>MenuAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MenuInvitado.Master.cs">
+      <DependentUpon>MenuInvitado.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuInvitado.Master.designer.cs">
+      <DependentUpon>MenuInvitado.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MenuVenta.Master.cs">
+      <DependentUpon>MenuVenta.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuVenta.Master.designer.cs">
+      <DependentUpon>MenuVenta.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ModEmpleado.aspx.cs">
+      <DependentUpon>ModEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModEmpleado.aspx.designer.cs">
+      <DependentUpon>ModEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModInEmpleado.aspx.cs">
+      <DependentUpon>ModInEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModInEmpleado.aspx.designer.cs">
+      <DependentUpon>ModInEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModInSucursal.aspx.cs">
+      <DependentUpon>ModInSucursal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModInSucursal.aspx.designer.cs">
+      <DependentUpon>ModInSucursal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModInVehiculo.aspx.cs">
+      <DependentUpon>ModInVehiculo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModInVehiculo.aspx.designer.cs">
+      <DependentUpon>ModInVehiculo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModSucursal.aspx.cs">
+      <DependentUpon>ModSucursal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModSucursal.aspx.designer.cs">
+      <DependentUpon>ModSucursal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeAlquiler.aspx.cs">
+      <DependentUpon>HomeAlquiler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeAlquiler.aspx.designer.cs">
+      <DependentUpon>HomeAlquiler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAlquiler.Master.cs">
+      <DependentUpon>MenuAlquiler.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuAlquiler.Master.designer.cs">
+      <DependentUpon>MenuAlquiler.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ModVehiculo.aspx.cs">
+      <DependentUpon>ModVehiculo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModVehiculo.aspx.designer.cs">
+      <DependentUpon>ModVehiculo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarAlquiler.aspx.cs">
+      <DependentUpon>RegistrarAlquiler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarAlquiler.aspx.designer.cs">
+      <DependentUpon>RegistrarAlquiler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarVenta.aspx.cs">
+      <DependentUpon>RegistrarVenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarVenta.aspx.designer.cs">
+      <DependentUpon>RegistrarVenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroEmpleado.aspx.cs">
+      <DependentUpon>RegistroEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroEmpleado.aspx.designer.cs">
+      <DependentUpon>RegistroEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroSucursal.aspx.cs">
+      <DependentUpon>RegistroSucursal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroSucursal.aspx.designer.cs">
+      <DependentUpon>RegistroSucursal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroVehiculo.aspx.cs">
+      <DependentUpon>RegistroVehiculo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroVehiculo.aspx.designer.cs">
+      <DependentUpon>RegistroVehiculo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteAlquiler.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteAlquiler.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Verhoeff.cs" />
+    <Compile Include="VisorFactura.aspx.cs">
+      <DependentUpon>VisorFactura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisorFactura.aspx.designer.cs">
+      <DependentUpon>VisorFactura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisorReporteAlquiler.aspx.cs">
+      <DependentUpon>VisorReporteAlquiler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisorReporteAlquiler.aspx.designer.cs">
+      <DependentUpon>VisorReporteAlquiler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\RefserviciowebVentaAlquiler\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="FotosPerfil\" />
+    <Folder Include="PdfsGenerados\" />
+    <Folder Include="QRCode\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="assets\sass\ie8.scss" />
+    <Content Include="assets\sass\ie9.scss" />
+    <Content Include="assets\sass\libs\_functions.scss" />
+    <Content Include="assets\sass\libs\_mixins.scss" />
+    <Content Include="assets\sass\libs\_skel.scss" />
+    <Content Include="assets\sass\libs\_vars.scss" />
+    <Content Include="assets\sass\main.scss" />
+    <Content Include="MenuAdmin.Master" />
+    <None Include="Web References\RefserviciowebVentaAlquiler\DSVentaAlquiler.xsd" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:41678/Service.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\RefserviciowebVentaAlquiler\</RelPath>
+      <UpdateFromURL>http://localhost:41678/Service.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>VentaAlquilerVehiculos_RefserviciowebVentaAlquiler_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Factura.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Factura.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteAlquiler.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteAlquiler.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>48526</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:41695/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

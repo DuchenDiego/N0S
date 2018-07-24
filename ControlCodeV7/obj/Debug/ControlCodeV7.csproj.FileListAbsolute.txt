@@ -1,0 +1,20 @@
+D:\VSProjects\Codigo de Control v7\ControlCodeV7\bin\Debug\ControlCodeV7.dll
+D:\VSProjects\Codigo de Control v7\ControlCodeV7\bin\Debug\ControlCodeV7.pdb
+D:\VSProjects\Codigo de Control v7\ControlCodeV7\obj\Debug\ControlCodeV7.csprojResolveAssemblyReference.cache
+D:\VSProjects\Codigo de Control v7\ControlCodeV7\obj\Debug\ControlCodeV7.dll
+D:\VSProjects\Codigo de Control v7\ControlCodeV7\obj\Debug\ControlCodeV7.pdb
+C:\Users\Win7-64\Desktop\Taller Sistemas 1 Stuff\Generacion Codigo de Control\Codigo de Control v7\ControlCodeV7\bin\Debug\ControlCodeV7.dll
+C:\Users\Win7-64\Desktop\Taller Sistemas 1 Stuff\Generacion Codigo de Control\Codigo de Control v7\ControlCodeV7\bin\Debug\ControlCodeV7.pdb
+C:\Users\Win7-64\Desktop\Taller Sistemas 1 Stuff\Generacion Codigo de Control\Codigo de Control v7\ControlCodeV7\bin\Debug\mscorlib.dll
+C:\Users\Win7-64\Desktop\Taller Sistemas 1 Stuff\Generacion Codigo de Control\Codigo de Control v7\ControlCodeV7\bin\Debug\System.Net.Http.dll
+C:\Users\Win7-64\Desktop\Taller Sistemas 1 Stuff\Generacion Codigo de Control\Codigo de Control v7\ControlCodeV7\bin\Debug\System.Net.Http.xml
+C:\Users\Win7-64\Desktop\Taller Sistemas 1 Stuff\Generacion Codigo de Control\Codigo de Control v7\ControlCodeV7\bin\Debug\es\mscorlib.resources.dll
+C:\Users\Win7-64\Desktop\Taller Sistemas 1 Stuff\Generacion Codigo de Control\Codigo de Control v7\ControlCodeV7\bin\Debug\es\System.Net.Http.resources.dll
+C:\Users\Win7-64\Desktop\Taller Sistemas 1 Stuff\Generacion Codigo de Control\Codigo de Control v7\ControlCodeV7\bin\Debug\normidna.nlp
+C:\Users\Win7-64\Desktop\Taller Sistemas 1 Stuff\Generacion Codigo de Control\Codigo de Control v7\ControlCodeV7\bin\Debug\normnfc.nlp
+C:\Users\Win7-64\Desktop\Taller Sistemas 1 Stuff\Generacion Codigo de Control\Codigo de Control v7\ControlCodeV7\bin\Debug\normnfd.nlp
+C:\Users\Win7-64\Desktop\Taller Sistemas 1 Stuff\Generacion Codigo de Control\Codigo de Control v7\ControlCodeV7\bin\Debug\normnfkc.nlp
+C:\Users\Win7-64\Desktop\Taller Sistemas 1 Stuff\Generacion Codigo de Control\Codigo de Control v7\ControlCodeV7\bin\Debug\normnfkd.nlp
+C:\Users\Win7-64\Desktop\Taller Sistemas 1 Stuff\Generacion Codigo de Control\Codigo de Control v7\ControlCodeV7\obj\Debug\ControlCodeV7.csprojResolveAssemblyReference.cache
+C:\Users\Win7-64\Desktop\Taller Sistemas 1 Stuff\Generacion Codigo de Control\Codigo de Control v7\ControlCodeV7\obj\Debug\ControlCodeV7.dll
+C:\Users\Win7-64\Desktop\Taller Sistemas 1 Stuff\Generacion Codigo de Control\Codigo de Control v7\ControlCodeV7\obj\Debug\ControlCodeV7.pdb
